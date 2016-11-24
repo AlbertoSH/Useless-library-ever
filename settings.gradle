@@ -1,0 +1,3 @@
+rootProject.name = 'useless-library-ever-project'
+include 'useless-library-ever'
+include 'sample'

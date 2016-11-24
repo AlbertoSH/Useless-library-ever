@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":sample:main" external.linked.project.path="$MODULE_DIR$/../../../sample" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="com.github.albertosh" external.system.module.type="sourceSet" external.system.module.version="1.0-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/../../../sample/build/classes/main" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../sample/src/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../../sample/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../sample/src/main/resources" type="java-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../useless-library-ever/libs/tools.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="useless-library-ever_main" />
+  </component>
+</module>

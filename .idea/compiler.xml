@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="sample_main" target="1.8" />
+      <module name="sample_test" target="1.8" />
+      <module name="useless-library-ever-project_main" target="1.5" />
+      <module name="useless-library-ever-project_test" target="1.5" />
+      <module name="useless-library-ever_main" target="1.8" />
+      <module name="useless-library-ever_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

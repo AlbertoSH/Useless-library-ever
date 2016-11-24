@@ -1,0 +1,64 @@
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile files("libs/tools.jar")  // tools.jar from jdk
+}
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.6'
+    }
+}
+apply plugin: 'com.jfrog.bintray'
+
+apply plugin: 'maven-publish'
+
+task sourceJar(type: Jar) {
+    from sourceSets.main.allJava
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+            groupId 'com.github.albertosh'
+            artifactId 'useless-library-ever'
+            version '1.0.0'
+
+            artifact sourceJar {
+                classifier "sources"
+            }
+        }
+    }
+}
+
+bintray {
+    user = project.hasProperty('bintrayUser') ? project.property('bintrayUser') : System.getenv('BINTRAY_USER')
+    key = project.hasProperty('bintrayApiKey') ? project.property('bintrayApiKey') : System.getenv('BINTRAY_API_KEY')
+    publications = ['mavenJava']
+    pkg {
+        repo = 'maven'
+        name = 'useless-library-ever'
+        licenses = ['MIT']
+        vcsUrl = 'https://github.com/AlbertoSH/Useless-library-ever.git'
+        issueTrackerUrl = 'https://github.com/AlbertoSH/Useless-library-ever/issues'
+        labels = ['Java']
+        publicDownloadNumbers = true
+        githubRepo = 'AlbertoSH/Useless-library-ever'
+        githubReleaseNotesFile = 'README.md'
+        version {
+            name = '1.0.0'
+            desc = 'Useless-library-ever 1.0.0'
+            vcsTag = '1.0.0'
+        }
+    }
+}

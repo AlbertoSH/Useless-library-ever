@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="useless-library-ever:test" external.linked.project.path="$MODULE_DIR$/../../useless-library-ever" external.root.project.path="$MODULE_DIR$/../../useless-library-ever" external.system.id="GRADLE" external.system.module.group="" external.system.module.type="sourceSet" external.system.module.version="1.0-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="false">
+    <output-test url="file://$MODULE_DIR$/../../useless-library-ever/build/classes/test" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../useless-library-ever/src/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../useless-library-ever/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../useless-library-ever/src/test/resources" type="java-test-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="useless-library-ever_main" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../useless-library-ever/libs/tools.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+  <component name="TestModuleProperties" production-module="useless-library-ever_main" />
+</module>
