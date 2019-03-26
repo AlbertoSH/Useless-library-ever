@@ -57,7 +57,7 @@ can be. If you want an example of how powerfull this technique can be you can ch
 
 ## License
  
-    The MIT C
+    The MIT License
     
     Copyright (c) 2016 Alberto Sanz
     
